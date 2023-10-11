@@ -1,0 +1,13 @@
+.barContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+  color: var(--dark-grayish-blue);
+  background-color: var(--very-dark-desaturated-blue);
+  border-radius: 0 0 5px 5px;
+  height: 2.5rem;
+  padding: 1.5rem;
+}

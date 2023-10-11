@@ -1,0 +1,18 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--very-dark-desaturated-blue);
+  height: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.desktopFilter {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btnActive {
+  color: var(--bright-blue);
+}

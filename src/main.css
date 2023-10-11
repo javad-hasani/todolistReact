@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  /* Dark Theme */
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --light-grayish-blue: hsl(236, 33%, 92%);
+  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+  --clr-focus: rgb(194, 194, 194);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.topContainer {
+  max-width: 40rem;
+  margin: auto;
+  padding: 2.5rem 1rem 1rem;
+}
+
+.todoTopContainer {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.background {
+  background-image: url("/images/bg-mobile-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 14rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 600px) {
+  .background {
+    background-image: url("/images/bg-desktop-dark.jpg");
+  }
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+  --very-dark-blue: hsl(0, 0%, 98%);
+  --very-dark-desaturated-blue: hsl(0, 0%, 98%);
+  --light-grayish-blue: hsl(235, 19%, 35%);
+  --very-dark-grayish-blue: hsl(236, 33%, 92%);
+  --clr-focus: rgb(231, 231, 231);
+
+  .background {
+    background-image: url("/images/bg-mobile-light.jpg");
+  }
+
+  @media screen and (min-width: 600px) {
+    .background {
+      background-image: url("/images/bg-desktop-light.jpg");
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+footer {
+  padding: 0 1rem 1rem;
+}

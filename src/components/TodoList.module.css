@@ -1,0 +1,13 @@
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-desaturated-blue);
+  border-radius: 5px 5px 0 0;
+  color: white;
+}
+
+.emptyText {
+  padding: 1rem;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+}

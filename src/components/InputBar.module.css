@@ -1,0 +1,44 @@
+.barContainer {
+  background-color: var(--very-dark-desaturated-blue);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.barContainer button {
+  margin-left: 1rem;
+  cursor: text;
+}
+
+.barContainer button span {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border: 1px solid var(--dark-grayish-blue);
+  border-radius: 50%;
+}
+
+.barContainer .inputWrapper {
+  width: 100%;
+  background-color: var(--very-dark-desaturated-blue);
+  border: none;
+  outline: none;
+}
+
+.inputWrapper input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--light-grayish-blue);
+}
+
+.barContainer:focus-within {
+  outline: 3px dotted var(--clr-focus);
+  outline-offset: 2px;
+}
